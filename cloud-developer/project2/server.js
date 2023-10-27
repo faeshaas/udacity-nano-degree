@@ -49,7 +49,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util.js';
         var filteredPath = await filterImageFromURL(image_url)
         console.log(filteredPath)
         filteredImages.push(filteredPath)
-        res.status(200).sendFile(filteredPath)
+        res.status(200).sendFile(filteredPath, () => deleteLocalFiles(filteredImages))
         console.log(filteredPath)
       }
       catch (err) {
@@ -66,11 +66,3 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util.js';
       console.log( `server running http://localhost:${ port }` );
       console.log( `press CTRL+C to stop server` );
   } );
-
-  // Remove images
-  process.on('SIGINT', function() {
-    console.log("Caught interrupt signal");
-
-    deleteLocalFiles(filteredImages)
-    process.exit();
-});
