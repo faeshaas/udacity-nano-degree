@@ -1,0 +1,11 @@
+MySQL [udacity]> INSERT INTO test ( id, name) VALUES (2, 'Udacity2');
+Query OK, 1 row affected (0.009 sec)
+
+MySQL [udacity]> SELECT * FROM test;
++----+----------+
+| id | name     |
++----+----------+
+|  1 | Udacity  |
+|  2 | Udacity2 |
++----+----------+
+2 rows in set (0.001 sec)

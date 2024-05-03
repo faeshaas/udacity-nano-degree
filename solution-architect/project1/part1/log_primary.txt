@@ -1,0 +1,22 @@
+MySQL [(none)]> CREATE DATABASE udacity;
+Query OK, 1 row affected (0.012 sec)
+
+MySQL [(none)]> USE udacity
+Database changed
+MySQL [udacity]> CREATE TABLE test (
+    -> id INT AUTO_INCREMENT,
+    -> name VARCHAR(50) NOT NULL,
+    -> PRIMARY KEY(id)
+    -> );
+Query OK, 0 rows affected (0.232 sec)
+
+MySQL [udacity]> INSERT INTO test ( id, name) VALUES (1, 'Udacity');
+Query OK, 1 row affected (0.007 sec)
+
+MySQL [udacity]> SELECT * FROM test;
++----+---------+
+| id | name    |
++----+---------+
+|  1 | Udacity |
++----+---------+
+1 row in set (0.001 sec)

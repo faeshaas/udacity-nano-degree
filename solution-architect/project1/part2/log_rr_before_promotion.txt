@@ -1,0 +1,10 @@
+MySQL [udacity]> SELECT * FROM test;
++----+---------+
+| id | name    |
++----+---------+
+|  1 | Udacity |
++----+---------+
+1 row in set (0.001 sec)
+
+MySQL [udacity]> INSERT INTO test ( id, name) VALUES (1, 'Udacity2');
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement

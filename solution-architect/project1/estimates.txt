@@ -1,0 +1,11 @@
+Minimum RTO for a single AZ outage
+The minimum RTO for a single AZ outage would be around 10 minutes because a synchronious replication exist and no manual intervention is needed.
+
+Minimum RTO for a single region outage
+In case of a single region outage we have to promote the read replica manually which will take more time. So the RTO would be around 1 hour.
+
+Minimum RPO for a single AZ outage
+The RPO for a single AZ outage will be around 5 minutes because it can be automatically recover using the read replica
+
+Minimum RPO for a single region outage
+The RPO for single region outage will take longer due to the manual intervention so it would be around 45 minutes
