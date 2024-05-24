@@ -1,0 +1,3 @@
+I reduced the costs by using a smaller EC2 instance type.
+I did the same for the RDS instance.
+This will decrease the performance of the service a bit but it will still be useful for the end-user

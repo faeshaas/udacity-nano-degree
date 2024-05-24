@@ -1,0 +1,5 @@
+I increased the costs by using a bigger EC2 instance type.
+I did the same for the RDS instance.
+I also increased the amount of possible connections in the ALB
+This will increase the performance of the service and makes sure with higher loads the system is still performing great. 
+No degradation expected for the end users
