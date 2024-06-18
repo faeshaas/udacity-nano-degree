@@ -1,0 +1,7 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+The InstanceRolePolicy-C3 allows all actions on S3 which not comply to the least privilege permission best practice. So in case someone has access to the EC2 instance it is also possible to delete items in the bucket.
+
+# Poor practice 2
+The WebAppSG allows all IP protocols from all IP's to access the web application which makes it vulnerable for attacks via all ports and all protocols. This should be reduced to only the protocols and ports needed for the WebApplication. 

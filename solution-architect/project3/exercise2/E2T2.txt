@@ -1,0 +1,15 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+- HTTP to HTTPS redirection is not configured
+- EC2 instance has public IP association
+- EC2 instance is not configured with Instance Metadata Service Version 2
+- S3 buckets are not encrypted
+- S3 buckets do not have logging enabled
+- IAM policy is not checking for at least one lowercase character in password
+- IAM policy is not set up according least privilege best practice
+- 
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+- Only allow trafic from SG's 
+- Enable encryption and logging for S3 buckets
+- Update IAM password policy to check on at least one lowercase character
+- Configure specific ports to access EC2

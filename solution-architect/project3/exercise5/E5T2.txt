@@ -1,0 +1,19 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+Regula
+
+### Example vulnerability
+Wildcard used in IAM policy
+
+##Scan AMI’s or containers for OS vulnerabilities
+Amazon Inspector
+
+### Example vulnerability
+OS vulnerabilities
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config
+
+### Example vulnerability
+S3 bucket not encrypted
